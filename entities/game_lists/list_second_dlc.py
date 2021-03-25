@@ -1,0 +1,36 @@
+from entities.location import Location
+
+
+class List_second_dlc():
+        list_name = "1-ый дополнительный"
+        list_of_location = []
+        list_of_location.append(Location("Стрип-клуб", "dlc/second_dlc/strip.jpg"))        
+        list_of_location.append(Location("Зона 51", "dlc/second_dlc/area_51.jpg")) 
+        list_of_location.append(Location("Зоопарк", "dlc/second_dlc/zoopark.jpg"))     
+        list_of_location.append(Location("Стройплощадка", "dlc/second_dlc/stroika.jpg"))     
+        list_of_location.append(Location("Тюрьма", "dlc/second_dlc/aye.jpg"))      
+        list_of_location.append(Location("Ночной клуб", "dlc/second_dlc/club.jpg"))        
+        list_of_location.append(Location("Бар", "dlc/second_dlc/bar.jpg"))        
+        list_of_location.append(Location("Метро", "dlc/second_dlc/metro.jpg"))       
+        list_of_location.append(Location("Кинотеатр", "dlc/second_dlc/kino.jpg"))      
+        list_of_location.append(Location("Кузница", "dlc/second_dlc/kyznica.jpg"))     
+        list_of_location.append(Location("Музей", "dlc/second_dlc/museim.jpg"))      
+        list_of_location.append(Location("Лес", "dlc/second_dlc/forest.jpg"))    
+        list_of_location.append(Location("Спортзал", "dlc/second_dlc/gym.jpg"))       
+        list_of_location.append(Location("Столовая", "dlc/second_dlc/stolovka.jpg"))     
+        list_of_location.append(Location("ЗАГС", "dlc/second_dlc/zags.jpg"))      
+        list_of_location.append(Location("Суд", "dlc/second_dlc/syd.jpg"))     
+        list_of_location.append(Location("Свалка", "dlc/second_dlc/pomoika.jpg"))
+        list_of_location.append(Location("Рок-концерт", "dlc/second_dlc/consert.jpg"))    
+        list_of_location.append(Location("Псих-больница", "dlc/second_dlc/psih.jpg"))   
+        list_of_location.append(Location("Пустыня", "dlc/second_dlc/duna.jpg"))    
+        list_of_location.append(Location("Рай", "dlc/second_dlc/heaven.jpg"))  
+        list_of_location.append(Location("Ад", "dlc/second_dlc/strip.jpg"))  
+        list_of_location.append(Location("Чернобыль", "dlc/second_dlc/stalker.jpg"))
+        list_of_location.append(Location("Завод", "dlc/second_dlc/zavod.jpg"))
+        list_of_location.append(Location("Худ. мастерская", "dlc/second_dlc/art_room.jpg"))
+        list_of_location.append(Location("Ферма", "dlc/second_dlc/rancho.jpg"))
+        list_of_location.append(Location("Кладбище", "dlc/second_dlc/grave.jpg"))
+        list_of_location.append(Location("Болото", "dlc/second_dlc/boloto.jpg"))
+        list_of_location.append(Location("Замок", "dlc/second_dlc/castle.jpg"))
+        list_of_location.append(Location("Баня", "dlc/second_dlc/banya.jpg"))

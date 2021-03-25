@@ -1,8 +1,8 @@
 import telebot, copy, time,os
 from entities.chat_main import Chat_main
 from entities.player import Player
-from entities.game_lists.list_main import List_main
-from entities.game_lists.list_dlc_1 import List_dlc_1
+from entities.game_lists.list_first_default import List_first_default
+from entities.game_lists.list_second_dlc import List_dlc_1
 from flask import Flask, request
 import logging
 from telebot import types
@@ -39,7 +39,7 @@ def start_message(message):
                                              message.chat.title,  # Название
                                              online)  # Тип игры (онлайн/офлайн)
 
-                    current_list = (List_main())  # создание объекта
+                    current_list = (List_first_default())  # создание объекта
                     current_list.fill_lications()  # заполнение локаций
                     current_chat.current_object_of_roles = current_list  # задать текущий список
 
@@ -76,7 +76,7 @@ def start_message(message):
                                          "офлайн режима",  # Название
                                          online)  # Тип игры (онлайн/офлайн)
 
-                current_list = (List_main())  # создание объекта
+                current_list = (List_first_default())  # создание объекта
                 current_list.fill_lications()  # заполнение локаций
                 current_chat.current_object_of_roles = current_list  # задать текущий список
 
@@ -163,7 +163,7 @@ def send_for_spy_list_of_lications(from_user_id, message, current_list):
         for id, i in enumerate(current_list.list_of_location):
             if id == len(current_list.list_of_location) / 2:
                 break
-            if not i.in_game:
+            if not i:
                 text_1 = '\u0336'.join((str(id)) + ". " + i.name)
             else:
                 text_1 = str(id) + ". " + i.name
@@ -722,7 +722,7 @@ def process_change_list_1(call, number, chat_id):
         for i in all_chat_list:
             if i.chat_id == chat_id:  # Найти игру
                 if number == 1:
-                    current_list = (List_main())  # создание объекта
+                    current_list = (List_first_default())  # создание объекта
                 elif number == 2:
                     current_list = (List_dlc_1())  # создание объекта
                 current_list.fill_lications()  # заполнение локаций
@@ -1003,7 +1003,7 @@ def start_message_players(message):
                 current_list.fill_lications()  # заполнение локаций
                 i.current_object_of_roles = current_list  # задать текущий список
             elif message.text[1:] == "Основной":
-                current_list = (List_main())  # создание объекта
+                current_list = (List_first_default())  # создание объекта
                 current_list.fill_lications()  # заполнение локаций
                 i.current_object_of_roles = current_list  # задать текущий список
             bot.send_message(i.chat_id, "Список был изменен на: " + message.text[1:])

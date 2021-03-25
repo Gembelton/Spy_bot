@@ -49,7 +49,7 @@ def db_check_jurnal_exist(user_id, location_number):
         cur = conn.cursor()
         cur.execute(" SELECT count(id) FROM Jurnal_of_disable"
                     " WHERE user_id='{0}' AND list_number='{1}' AND location_number='{2}' ".
-                    format((user_id), db_get_current_list(user_id), location_number))
+                    format((user_id), db_get_current_list_number(user_id), location_number))
 
         # if the count is 1, then table exists
         if cur.fetchone()[0] == 1:
@@ -63,7 +63,7 @@ def db_delete_from_jurnal_one(user_id, location_number):
         try:
             cur.execute(
                 "DELETE FROM Jurnal_of_disable WHERE user_id='{0}' AND list_number='{1}' AND location_number='{2}' ".
-                format((user_id), db_get_current_list(user_id), location_number))
+                format((user_id), db_get_current_list_number(user_id), location_number))
             conn.commit()
         except Error:
             pass
@@ -75,7 +75,7 @@ def db_delete_from_jurnal_all(user_id):
         cur = conn.cursor()
         try:
             cur.execute("DELETE FROM Jurnal_of_disable WHERE user_id='{0}' AND list_number='{1}' ".
-                        format((user_id), db_get_current_list(user_id)))
+                        format((user_id), db_get_current_list_number(user_id)))
             conn.commit()
         except Error:
             pass
@@ -89,14 +89,14 @@ def db_set_all_jurnal(user_id):
             for i in range(30):
                 cur.execute("INSERT INTO Jurnal_of_disable(user_id,list_number,location_number) VALUES({0},{1},{2})"
                             .format(user_id,
-                                    db_get_current_list(user_id),
+                                    db_get_current_list_number(user_id),
                                     i + 1))
             conn.commit()
         except Error:
             pass
 
 
-def db_get_current_list(user_id):
+def db_get_current_list_number(user_id):
     conn = create_connection(r"database\User_options.db")
     with conn:
         cur = conn.cursor()
@@ -153,7 +153,7 @@ def db_get_all_disabled_from_jurnal(user_id):
         cur = conn.cursor()
         cur.execute(" SELECT location_number FROM Jurnal_of_disable"
                     " WHERE user_id='{0}' AND list_number='{1}'".
-                    format((user_id), db_get_current_list(user_id)))
+                    format((user_id), db_get_current_list_number(user_id)))
         disabled_locations_list = []
         for line in cur.fetchall():
             disabled_locations_list.append(line[0])
@@ -255,7 +255,7 @@ def db_insert_jurnal_one(user_id, location_number):
         try:
             cur.execute("INSERT INTO Jurnal_of_disable(user_id,list_number,location_number) VALUES({0},{1},{2})"
                         .format(user_id,
-                                db_get_current_list(user_id),
+                                db_get_current_list_number(user_id),
                                 location_number))
             conn.commit()
         except (sqlite3.IntegrityError):

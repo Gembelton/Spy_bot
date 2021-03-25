@@ -3,9 +3,77 @@
   <component name="ChangeListManager">
     <list default="true" id="0410a831-b887-4181-939f-60e1ca6d1107" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot_v2.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot_v2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/database/User_options.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/User_options.db" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_functions.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/entities/game_lists/list_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/game_lists/list_main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/game_lists/list_dlc_1.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/game_lists/list_second_dlc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/game_lists/list_main.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/game_lists/list_first_default.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/location.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/location.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/airplane.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/airplane.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/bank.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/bank.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/beach.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/beach.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/casino.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/casino.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/chirch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/chirch.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/circus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/circus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/corporate_disco.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/corporate_disco.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/crusaders.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/crusaders.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/embassy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/embassy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/hospital.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/hospital.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/hotel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/hotel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/kinostudio.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/kinostudio.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/military_union.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/military_union.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/partisane_team.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/partisane_team.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/pirate_ship.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/pirate_ship.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/polar_station.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/polar_station.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/police.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/police.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/restouran.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/restouran.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/school.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/school.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/ship.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/ship.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/spa.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/spa.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/space_station.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/space_station.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/spy.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/spy.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/sto.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/sto.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/supermarket.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/supermarket.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/teather.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/teather.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/terror_base.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/terror_base.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/train.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/train.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/underwater_sheep.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/underwater_sheep.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/default/university.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/university.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/area_51.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/area_51.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/art_room.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/art_room.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/aye.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/aye.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/banya.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/banya.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/bar.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/bar.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/boloto.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/boloto.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/castle.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/castle.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/club.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/club.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/consert.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/consert.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/duna.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/duna.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/forest.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/forest.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/gay_club.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/gay_club.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/grave.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/grave.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/gym.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/gym.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/heaven.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/heaven.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/hell.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/hell.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/kino.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/kino.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/kyznica.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/kyznica.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/metro.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/metro.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/museim.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/museim.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/obshaga.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/obshaga.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/pomoika.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/pomoika.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/psih.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/psih.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/rancho.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/rancho.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/stadion.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/stadion.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/stalker.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/stalker.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/stolovka.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/stolovka.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/strip.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/strip.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/stroika.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/stroika.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/syd.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/syd.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/vpiska.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/vpiska.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/war_place.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/war_place.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/zags.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/zags.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/zavod.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/zavod.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/dlc_first/zoopark.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/second_dlc/zoopark.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -22,11 +90,30 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3234">
-              <caret line="154" column="58" selection-start-line="154" selection-start-column="51" selection-end-line="154" selection-end-column="58" />
+            <state relative-caret-position="121">
+              <caret line="242" column="63" selection-start-line="242" selection-start-column="63" selection-end-line="242" selection-end-column="63" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
+                <element signature="e#13131#13299#0" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entities/game_lists/list_second_dlc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="63">
+              <caret line="3" column="21" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entities/game_lists/list_first_default.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="24">
+              <caret line="1" column="24" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -34,8 +121,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/db_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="276" column="22" selection-start-line="276" selection-start-column="4" selection-end-line="276" selection-end-column="22" />
+            <state relative-caret-position="252">
+              <caret line="100" column="14" lean-forward="true" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -43,8 +130,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/bot_v2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="143">
-              <caret line="846" column="11" selection-start-line="846" selection-start-column="11" selection-end-line="846" selection-end-column="65" />
+            <state relative-caret-position="95">
+              <caret line="186" column="85" selection-start-line="186" selection-start-column="85" selection-end-line="186" selection-end-column="85" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
                 <element signature="e#31694#32630#0" />
@@ -56,8 +143,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://G:/For_leha/bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="255" column="58" lean-forward="true" selection-start-line="255" selection-start-column="58" selection-end-line="255" selection-end-column="58" />
+            <state relative-caret-position="-11">
+              <caret line="240" selection-start-line="240" selection-end-line="240" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -85,28 +172,7 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>curent</find>
-      <find>text</find>
-      <find>List_default</find>
-      <find>ra</find>
-      <find>list</find>
-      <find>EDIT_LIST</find>
-      <find>30</find>
-      <find>db_check_user_exist</find>
-      <find>ju</find>
-      <find>and</find>
-      <find>db_get_current_list</find>
-      <find>resta</find>
-      <find>back</find>
-      <find>play</find>
-      <find>show</find>
-      <find>random</find>
-      <find>self.</find>
-      <find>return</find>
-      <find>get</find>
-      <find>CoP</find>
       <find>SELECT curent_location_number</find>
-      <find>change</find>
       <find>message_id</find>
       <find>imag</find>
       <find>results</find>
@@ -115,9 +181,31 @@
       <find>get_mess</find>
       <find>result</find>
       <find>OPTIONS</find>
+      <find>default</find>
+      <find>spy</find>
+      <find>photo</find>
+      <find>in_game</find>
+      <find>**</find>
+      <find>list_of_location_UI</find>
+      <find>make_list_of_location_UI</find>
+      <find>back</find>
+      <find>START</find>
+      <find>выход</find>
+      <find>количеств</find>
+      <find>show_res</find>
+      <find>перезап</find>
+      <find>db_set_curent_list</find>
+      <find>self.</find>
+      <find>List_first_default</find>
+      <find>db_get_current_list</find>
+      <find>готовый</find>
+      <find>теку</find>
+      <find>change</find>
+      <find>current_list</find>
     </findStrings>
     <replaceStrings>
       <replace />
+      <replace>show_list_of_location_UI</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -134,15 +222,19 @@
         <option value="$PROJECT_DIR$/test.py" />
         <option value="$PROJECT_DIR$/entities/location.py" />
         <option value="$PROJECT_DIR$/entities/game_lists/list_main.py" />
+        <option value="$PROJECT_DIR$/bot_v2.py" />
+        <option value="$PROJECT_DIR$/entities/game_lists/list_dlc_1.py" />
+        <option value="$PROJECT_DIR$/entities/game_lists/list_first_default.py" />
+        <option value="$PROJECT_DIR$/entities/game_lists/list_second_dlc.py" />
         <option value="$PROJECT_DIR$/db_functions.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-14" />
-    <option name="y" value="151" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
     <option name="width" value="1374" />
     <option name="height" value="732" />
   </component>
@@ -154,6 +246,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -172,11 +265,15 @@
               <item name="entities" type="462c0819:PsiDirectoryNode" />
               <item name="game_lists" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Spy_bot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Spy_bot" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -286,15 +383,15 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-14" y="151" width="1374" height="732" extended-state="0" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.16993958" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.17220543" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.16163142" />
       <window_info id="Favorites" order="2" sideWeight="0.50595236" side_tool="true" weight="0.16993958" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59516615" weight="0.1764706" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.59516615" visible="true" weight="0.33496732" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -322,9 +419,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/entities/game_lists/dlc_first.py" />
-    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_dlc_1.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/entities/chat_main.py" />
     <entry file="file://$PROJECT_DIR$/entities/player.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -344,38 +438,6 @@
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/test.py" />
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entities/location.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/bot_v2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="143">
-          <caret line="846" column="11" selection-start-line="846" selection-start-column="11" selection-end-line="846" selection-end-column="65" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-            <element signature="e#31694#32630#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -386,29 +448,69 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="26" selection-start-line="1" selection-start-column="26" selection-end-line="1" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entities/location.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://G:/For_leha/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="255" column="58" lean-forward="true" selection-start-line="255" selection-start-column="58" selection-end-line="255" selection-end-column="58" />
+        <state relative-caret-position="-11">
+          <caret line="240" selection-start-line="240" selection-end-line="240" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/bot_v2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="186" column="85" selection-start-line="186" selection-start-column="85" selection-end-line="186" selection-end-column="85" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+            <element signature="e#31694#32630#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_second_dlc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="3" column="21" selection-start-line="3" selection-start-column="6" selection-end-line="3" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_first_default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="24" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/db_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="276" column="22" selection-start-line="276" selection-start-column="4" selection-end-line="276" selection-end-column="22" />
+        <state relative-caret-position="252">
+          <caret line="100" column="14" lean-forward="true" selection-start-line="100" selection-start-column="14" selection-end-line="100" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3234">
-          <caret line="154" column="58" selection-start-line="154" selection-start-column="51" selection-end-line="154" selection-end-column="58" />
+        <state relative-caret-position="121">
+          <caret line="242" column="63" selection-start-line="242" selection-start-column="63" selection-end-line="242" selection-end-column="63" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
+            <element signature="e#13131#13299#0" />
           </folding>
         </state>
       </provider>
