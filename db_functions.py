@@ -90,7 +90,7 @@ def db_set_all_jurnal(user_id):
                 cur.execute("INSERT INTO Jurnal_of_disable(user_id,list_number,location_number) VALUES({0},{1},{2})"
                             .format(user_id,
                                     db_get_current_list_number(user_id),
-                                    i + 1))
+                                    i ))
             conn.commit()
         except Error:
             pass

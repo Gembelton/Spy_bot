@@ -7,7 +7,6 @@ from db_functions import *
 from entities.game_lists.list_first_default import List_first_default
 from entities.game_lists.list_second_dlc import List_second_dlc
 
-
 bot = telebot.TeleBot(TOKEN)
 
 
@@ -16,15 +15,18 @@ bot = telebot.TeleBot(TOKEN)
 def start_message(message):
     if not db_check_user_exist(message.chat.id):
         db_insert_user(message.chat.id)  # Добавляет пользователя и задает ему дефолтный список
-        bot.send_message(message.chat.id, "Добро пожаловать" + u'\u2757\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход',
+        bot.send_message(message.chat.id,
+                         "Добро пожаловать" + u'\u2757\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход',
                          reply_markup=keyboard_default)
         db_set_curent_tier(message.chat.id, "START")
     else:
         if message.text.lower() == "/start":
-            bot.send_message(message.chat.id, "С возвращением" + u'\u2757\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход',
+            bot.send_message(message.chat.id,
+                             "С возвращением" + u'\u2757\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход',
                              reply_markup=keyboard_default)
         elif message.text.lower() == "/restart":
-            bot.send_message(message.chat.id, "Перезапуск прошел успешно" + u'\u2757\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход',
+            bot.send_message(message.chat.id,
+                             "Перезапуск прошел успешно" + u'\u2757\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход',
                              reply_markup=keyboard_default)
         db_clear_user_info(db_clear_user_info(message.chat.id))
 
@@ -50,6 +52,8 @@ def start_message(message):
         db_set_curent_tier(message.chat.id, "PLAY")
 
 
+
+
 @bot.message_handler(commands=['1', '2', '3', '4', '5',
                                '6', '7', '8', '9', '10',
                                '11', '12', '13', '14', '15',
@@ -57,11 +61,14 @@ def start_message(message):
                                '21', '22', '23', '24', '25',
                                '26', '27', '28', '29', '30'])
 def start_message(message):
+
     if db_check_user_exist(message.chat.id):
+        number = int(message.text[1:]) - 1
         if db_check_curent_tier(message.chat.id, "PLAY") and \
-                3 <= int(message.text[1:]) <= 10:
-            db_set_curent_CoP(message.chat.id, message.text[1:])  # Задали кол-во игроков
-            db_set_spy_number(message.chat.id, message.text[1:])  # Задали номер шпиона
+                3 <= number+1 <= 10:
+
+            db_set_curent_CoP(message.chat.id,number)  # Задали кол-во игроков
+            db_set_spy_number(message.chat.id,number)  # Задали номер шпиона
             default_count = [1, 2, 3, 4, 5,
                              6, 7, 8, 9, 10,
                              11, 12, 13, 14,
@@ -71,7 +78,8 @@ def start_message(message):
                              27, 28, 29, 30]  # Вычитание списков друг из друга, чтобы остались разрешенные
             access_locations = list(set(default_count) - set(db_get_all_disabled_from_jurnal(message.chat.id)))
             if not (access_locations):  # Если локаций не выбрано
-                bot.send_message(message.chat.id, "Список локаций пуск, добавьте хотябы 1 локацию" + u'\u2757\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход',
+                bot.send_message(message.chat.id,
+                                 "Список локаций пуск, добавьте хотябы 1 локацию" + u'\u2757\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход',
                                  reply_markup=keyboard_default)
                 db_set_curent_tier(message.chat.id, "START")
                 return 0
@@ -83,10 +91,15 @@ def start_message(message):
                              reply_markup=keyboard_show)
             db_set_curent_tier(message.chat.id, "GIVE_ROLES")
         elif db_check_curent_tier(message.chat.id, "EDIT_LIST"):
-            if not (db_check_jurnal_exist(message.chat.id, message.text[1:])):
-                db_insert_jurnal_one(message.chat.id, message.text[1:])  # Вставка записи выключения локации
+            if not (db_check_jurnal_exist(message.chat.id,number)):
+                db_insert_jurnal_one(message.chat.id, number)  # Вставка записи выключения локации
             else:
-                db_delete_from_jurnal_one(message.chat.id, message.text[1:])
+                db_delete_from_jurnal_one(message.chat.id, number)
+            bot.delete_message(message.chat.id, message.message_id)  # Удалил цифру
+            bot.delete_message(message.chat.id, db_get_message_id(message.chat.id))  # Удалил таблицу
+            db_set_delete_message_id(message.chat.id,
+                                     show_list_of_location_UI(message.chat.id))  # отобразил, и запомнил ее айди
+
 
 
 @bot.message_handler(commands=['options',
@@ -95,7 +108,7 @@ def start_message(message):
     if db_check_user_exist(message.chat.id) and \
             db_check_curent_tier(message.chat.id, "START"):
         show_list_of_location_UI(message.chat.id)
-        bot.send_message(message.chat.id, "Настройки:",reply_markup=keyboard_options)
+        bot.send_message(message.chat.id, "Настройки:", reply_markup=keyboard_options)
         db_set_curent_tier(message.chat.id, "OPTIONS")
 
 
@@ -148,7 +161,8 @@ def start_message(message):
     if db_check_user_exist(message.chat.id) and \
             db_check_curent_tier(message.chat.id, "SHOW_RESULTS"):
         role = get_current_list(message.chat.id).list_of_location[db_get_location(message.chat.id)]
-        caption_text = "Текущая локация: " + role.name + "\nИгрок " + str(db_get_spy_number(message.chat.id)) + ": Шпион\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход"
+        caption_text = "Текущая локация: " + role.name + "\nИгрок " + str(db_get_spy_number(
+            message.chat.id)) + ": Шпион\n/Play - начать игру\n/Options - настройки игры\n/Exit - выход"
         bot.send_photo(message.chat.id, photo=open(role.image, "rb"),
                        caption=caption_text, reply_markup=keyboard_default)
 
@@ -160,7 +174,11 @@ def start_message(message):
 def start_message(message):
     if db_check_user_exist(message.chat.id) and \
             db_check_curent_tier(message.chat.id, "OPTIONS"):
-        bot.send_message(message.chat.id, "Выберите готовый список:",
+        bot.send_message(message.chat.id, "Выбор готового списка"+ u'\u2757\n'+
+                                          "/List_first_default - основной\n"
+                                          "/List_second_DLC - дополнительный\n"
+                                          "/List_third_DLC - в разработке\n"
+                                          "",
                          reply_markup=keyboard_change_list)
         db_set_curent_tier(message.chat.id, "CHANGE_LIST")
 
@@ -189,8 +207,12 @@ def start_message(message):
 def start_message(message):
     if db_check_user_exist(message.chat.id) and \
             db_check_curent_tier(message.chat.id, "OPTIONS"):
-        bot.send_message(message.chat.id, "Текущий список: " + str(db_get_current_list_number(message.chat.id)),
+        bot.send_message(message.chat.id, "Редактирование " + u'\u2757' + "\n/1,/2,.../30 - изменение одной локации"
+                                                                          "\n/remove_all - выключить всё"
+                                                                          "\n/set_all - включить всё"
+                                                                          "\n/back - назад",
                          reply_markup=keyboard_edit_list)
+        db_set_delete_message_id(message.chat.id, show_list_of_location_UI(message.chat.id))
         db_set_curent_tier(message.chat.id, "EDIT_LIST")
 
 
@@ -201,7 +223,10 @@ def start_message(message):
             db_check_curent_tier(message.chat.id, "EDIT_LIST"):
         db_delete_from_jurnal_all(message.chat.id)
         db_set_all_jurnal(message.chat.id)
-
+        bot.delete_message(message.chat.id, message.message_id)  # Удалить надпись
+        bot.delete_message(message.chat.id, db_get_message_id(message.chat.id))  # Удалил таблицу
+        db_set_delete_message_id(message.chat.id,
+                                 show_list_of_location_UI(message.chat.id))  # отобразил, и запомнил ее айди
 
 @bot.message_handler(commands=['set_all',
                                'Set_all'])
@@ -209,19 +234,22 @@ def start_message(message):
     if db_check_user_exist(message.chat.id) and \
             db_check_curent_tier(message.chat.id, "EDIT_LIST"):
         db_delete_from_jurnal_all(message.chat.id)
-
+        bot.delete_message(message.chat.id, message.message_id)  # Удалить надпись
+        bot.delete_message(message.chat.id, db_get_message_id(message.chat.id))  # Удалил таблицу
+        db_set_delete_message_id(message.chat.id,
+                                 show_list_of_location_UI(message.chat.id))  # отобразил, и запомнил ее айди
 
 @bot.message_handler(commands=['back',
                                'Back'])
 def start_message(message):
     if db_check_user_exist(message.chat.id):
         if db_check_curent_tier(message.chat.id, "PLAY"):
-            bot.send_message(message.chat.id, "/Play - начать игру\n/Options - настройки игры\n/Exit - выход" ,
+            bot.send_message(message.chat.id, "/Play - начать игру\n/Options - настройки игры\n/Exit - выход",
                              reply_markup=keyboard_default)
             db_set_curent_tier(message.chat.id, "START")
 
         elif db_check_curent_tier(message.chat.id, "OPTIONS"):
-            bot.send_message(message.chat.id, "/Play - начать игру\n/Options - настройки игры\n/Exit - выход" ,
+            bot.send_message(message.chat.id, "/Play - начать игру\n/Options - настройки игры\n/Exit - выход",
                              reply_markup=keyboard_default)
             db_set_curent_tier(message.chat.id, "START")
 
@@ -241,19 +269,21 @@ def start_message(message):
 def show_list_of_location_UI(chat_id):
     current_list = get_current_list(chat_id)
     list_of_disabled = db_get_all_disabled_from_jurnal(chat_id)
-    text = ' Текущий список локаций :\n' + current_list.list_name+' \n' + u'**```\n'
+    text = ' Текущий список локаций :\n' + current_list.list_name + ' \n' + u'**```\n'
     num = 0
     for i, loc in enumerate(current_list.list_of_location):
         raznica = 20 - len(str(loc.name))
         current_smile = u'\u2705' if i not in list_of_disabled else u'\u274C'
-        if num <= 9:
-            text += u'{0}. {1}{3}{2:5}\n'.format(str(num), str(loc.name), str(current_smile), (raznica * (" ")))
+        if num < 9:
+            text += u'{0}. {1}{3}{2:5}\n'.format(str(num+1), str(loc.name), str(current_smile), (raznica * (" ")))
             num += 1
-        elif num >= 10:
-            text += u'{0}.{1}{3}{2:5}\n'.format(str(num), str(loc.name), str(current_smile), (raznica * (" ")))
+        elif num >= 9:
+            text += u'{0}.{1}{3}{2:5}\n'.format(str(num+1), str(loc.name), str(current_smile), (raznica * (" ")))
             num += 1
     text += u'```**'
-    bot.send_message(chat_id, text, parse_mode='Markdown')
+    message_id = bot.send_message(chat_id, text, parse_mode='Markdown').message_id
+    return message_id
+
 
 def get_current_list(chat_id):
     number_of_list = db_get_current_list_number(chat_id)
@@ -373,7 +403,7 @@ if __name__ == "__main__":
 
     # send image +
 
-    # edit list - delete message and resend it + delete /1 /2 /25 and other
+    # edit list - delete message and resend it + delete /1 /2 /25 and other +
     # Rules
     # Contacts
     # timeout time.sleep()

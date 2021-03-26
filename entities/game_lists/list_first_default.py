@@ -1,6 +1,6 @@
 from entities.location import Location
 class List_first_default():
-    list_name = "1 (Основной)"
+    list_name = "Основной"
     list_of_location = []
     # Заполнение
     list_of_location.append(Location("База террористов", "images/first_default/terror_base.jpg"))

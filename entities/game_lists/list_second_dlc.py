@@ -2,7 +2,7 @@ from entities.location import Location
 
 
 class List_second_dlc():
-        list_name = "1-ый дополнительный"
+        list_name = "Дополнительный"
         list_of_location = []
         list_of_location.append(Location("Стрип-клуб", "dlc/second_dlc/strip.jpg"))        
         list_of_location.append(Location("Зона 51", "dlc/second_dlc/area_51.jpg")) 
