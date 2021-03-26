@@ -3,11 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="0410a831-b887-4181-939f-60e1ca6d1107" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bot_v2.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config.py" beforeDir="false" afterPath="$PROJECT_DIR$/config.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/User_options.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/User_options.db" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,40 +18,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/db_functions.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="187" column="19" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/entities/game_lists/list_first_default.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://G:/For_leha/bot.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="145" column="41" lean-forward="true" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="16">
-              <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+              <caret line="1" column="22" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="263">
+              <caret line="440" column="12" selection-start-line="440" selection-start-column="12" selection-end-line="440" selection-end-column="12" />
+              <folding>
+                <element signature="e#0#34#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -124,14 +103,15 @@
         <option value="$PROJECT_DIR$/entities/game_lists/list_dlc_1.py" />
         <option value="$PROJECT_DIR$/entities/game_lists/list_second_dlc.py" />
         <option value="$PROJECT_DIR$/entities/game_lists/list_first_default.py" />
-        <option value="$PROJECT_DIR$/db_functions.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/config.py" />
+        <option value="$PROJECT_DIR$/db_functions.py" />
+        <option value="$PROJECT_DIR$/bot.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-43" />
     <option name="y" value="255" />
     <option name="width" value="1374" />
@@ -282,9 +262,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
+    <frame x="-4" y="-4" width="1374" height="732" extended-state="7" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.17673716" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.17673716" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.16163142" />
       <window_info id="Favorites" order="2" sideWeight="0.50595236" side_tool="true" weight="0.16993958" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -295,7 +276,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32843137" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32843137" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.40483382" side_tool="true" weight="0.1764706" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49924472" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -360,13 +341,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_first_default.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bot_v2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="371">
@@ -380,7 +354,7 @@
     <entry file="file://G:/For_leha/bot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="208">
-          <caret line="145" column="41" lean-forward="true" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="41" />
+          <caret line="145" column="41" selection-start-line="145" selection-start-column="33" selection-end-line="145" selection-end-column="41" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
           </folding>
@@ -397,17 +371,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
+    <entry file="file://$PROJECT_DIR$/db_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="22" selection-start-line="1" selection-start-column="22" selection-end-line="1" selection-end-column="22" />
+        <state relative-caret-position="-3798">
+          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/db_functions.py">
+    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_first_default.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="187" column="19" selection-start-line="187" selection-start-column="4" selection-end-line="187" selection-end-column="19" />
+        <state relative-caret-position="224">
+          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="263">
+          <caret line="440" column="12" selection-start-line="440" selection-start-column="12" selection-end-line="440" selection-end-column="12" />
+          <folding>
+            <element signature="e#0#34#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="22" selection-start-line="1" selection-start-column="12" selection-end-line="1" selection-end-column="22" />
         </state>
       </provider>
     </entry>
