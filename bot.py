@@ -423,12 +423,17 @@ key_back = types.KeyboardButton(text="/back")
 keyboard_edit_list.add(key_clear, key_all, key_back)
 ###########################################################################
 
+
+
 if "HEROKU" in list(os.environ.keys()):
     logger = telebot.logger
     telebot.logger.setLevel(logging.INFO)
 
     server = Flask(__name__)
+    if 'DATABASE_URL' in os.environ:
+        import dj_database_url
 
+        DATABASES = {'default': dj_database_url.config()}
 
     @server.route("/bot", methods=['POST'])
     def getMessage():

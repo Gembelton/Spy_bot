@@ -2,7 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0410a831-b887-4181-939f-60e1ca6d1107" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/area_51.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/art_room.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/aye.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/banya.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/bar.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/boloto.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/castle.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/club.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/consert.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/duna.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/forest.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/gay_club.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/grave.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/gym.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/heaven.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/hell.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/kino.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/kyznica.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/metro.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/museim.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/obshaga.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/pomoika.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/psih.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/rancho.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/stadion.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/stalker.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/stolovka.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/strip.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/stroika.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/syd.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/vpiska.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/war_place.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/zags.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/zavod.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/second_dlc/zoopark.jpg" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,8 +53,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="172">
+              <caret line="433" column="21" selection-start-line="433" selection-start-column="21" selection-end-line="433" selection-end-column="21" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
               </folding>
@@ -293,6 +328,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.18353474" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.16163142" />
@@ -396,13 +432,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16">
-          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py" />
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
@@ -411,10 +440,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="16">
+          <caret line="1" column="17" lean-forward="true" selection-start-line="1" selection-start-column="17" selection-end-line="1" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="172">
+          <caret line="433" column="21" selection-start-line="433" selection-start-column="21" selection-end-line="433" selection-end-column="21" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
