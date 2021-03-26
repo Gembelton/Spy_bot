@@ -430,10 +430,7 @@ if "HEROKU" in list(os.environ.keys()):
     telebot.logger.setLevel(logging.INFO)
 
     server = Flask(__name__)
-    if 'DATABASE_URL' in os.environ:
-        import dj_database_url
 
-        DATABASES = {'default': dj_database_url.config()}
 
     @server.route("/bot", methods=['POST'])
     def getMessage():
