@@ -1,4 +1,4 @@
-import telebot, os, logging, flask
+﻿import telebot, os, logging, flask
 from config import TOKEN, APP_NAME
 from flask import Flask, request
 from telebot import types
@@ -445,11 +445,7 @@ if "HEROKU" in list(os.environ.keys()):
     app.run(host="0.0.0.0", port=os.environ.get('PORT', 60))
 else:
     bot.remove_webhook()
-    while True:
-        try:
-            bot.polling(none_stop=True)
-        except Error:
-            pass
+    bot.polling(none_stop=True)
 
 server = flask.Flask(__name__)
 
