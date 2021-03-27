@@ -168,6 +168,13 @@ def db_get_CoP(user_id):
         cur.execute(" SELECT count_of_players FROM User WHERE id='{0}'".format(user_id))
         return cur.fetchone()[0]
 
+def db_get_CoP_FINAL(user_id):
+    conn = create_connection(r"database\User_options.db")
+    with conn:
+        cur = conn.cursor()
+        cur.execute(" SELECT count_of_players_FINAL FROM User WHERE id='{0}'".format(user_id))
+        return cur.fetchone()[0]
+
 
 def db_get_message_id(user_id):
     conn = create_connection(r"database\User_options.db")
@@ -231,6 +238,17 @@ def db_set_curent_tier(user_id, tier_name):
             pass
 
 
+def db_set_COP_FINAL(user_id, cop_FINAL):
+    """изменение текущего тира юзера"""
+    conn = create_connection(r"database\User_options.db")
+    with conn:
+        cur = conn.cursor()
+        try:
+            cur.execute("UPDATE User SET count_of_players_FINAL = '{0}' WHERE id = '{1}'".format(cop_FINAL, user_id))
+            conn.commit()
+        except Error:
+            pass
+
 def db_insert_user(user_id):
     """
     Create a new project into the projects table
@@ -283,7 +301,8 @@ def db_clear_user_info(user_id):
                     " count_of_players = NULL ,"
                     " curent_location_number = NULL ,"
                     " spy_number = NULL ,"
-                    " delete_message_id = NULL WHERE id = '{0}'".format(user_id))
+                    " delete_message_id = NULL,"
+                    " count_of_players_FINAL = NULL WHERE id = '{0}'".format(user_id))
         conn.commit()
 
 

@@ -80,6 +80,7 @@ def start_message(message):
                 3 <= number + 1 <= 10:
             number += 1
             db_set_curent_CoP(message.chat.id, number)  # Задали кол-во игроков
+            db_set_COP_FINAL(message.chat.id, number) # необходимо для корректного счетчика
             db_set_spy_number(message.chat.id, number)  # Задали номер шпиона
             default_count = [1, 2, 3, 4, 5,
                              6, 7, 8, 9, 10,
@@ -101,9 +102,9 @@ def start_message(message):
                 db_set_curent_tier(message.chat.id, "START")
                 return 0
             db_set_location(message.chat.id, access_locations)  # задает id локации в бд
-            player_number = db_get_CoP(message.chat.id)
+
             bot.send_message(message.chat.id, "Роли распределены" + u'\u2757' +
-                             "\n Игрок " + str(player_number) + "\n /Show - чтобы увидеть вашу локация\n"
+                             "\n Игрок " + str(1) + "\n /Show - чтобы увидеть вашу локацию\n"
                                                                 " /Restart - для перезапуска\n",
                              reply_markup=keyboard_show)
             db_set_curent_tier(message.chat.id, "GIVE_ROLES")
@@ -136,8 +137,8 @@ def start_message(message):
 def start_message(message):
     if db_check_user_exist(message.chat.id) and \
             db_check_curent_tier(message.chat.id, "GIVE_ROLES"):
-        player_number = db_decrease_CoP(message.chat.id) + 1
-        if player_number > 0:  # Если не 0
+        player_number = db_get_CoP_FINAL(message.chat.id)-db_decrease_CoP(message.chat.id)
+        if db_get_CoP(message.chat.id) >= 0:  # Если не 0
             if (db_get_spy_number(message.chat.id)) == player_number:
                 caption_text = ("Игрок " + str(player_number) + "\nВаша роль: Шпион \n/Hide - спрятать роль")
                 spy_image_path = "images/first_default/spy.jpg"
@@ -145,8 +146,7 @@ def start_message(message):
                                             caption=caption_text, reply_markup=keyboard_hide).message_id
             else:
                 role = get_current_list(message.chat.id).list_of_location[db_get_location(message.chat.id)]
-                caption_text = ("Игрок " + str(
-                    player_number) + "\nВаша локация: " + role.name + "\n/Hide - спрятать локацию")
+                caption_text = ("Игрок " + str(player_number) + "\nВаша локация: " + role.name + "\n/Hide - спрятать локацию")
                 message_id = bot.send_photo(message.chat.id, photo=open(role.image, "rb"),
                                             caption=caption_text, reply_markup=keyboard_hide).message_id
 
@@ -160,8 +160,8 @@ def start_message(message):
     if db_check_user_exist(message.chat.id) and \
             db_check_curent_tier(message.chat.id, "HIDE_ROLE"):
 
-        player_number = db_get_CoP(message.chat.id)
-        if player_number > 0:
+        player_number = db_get_CoP_FINAL(message.chat.id)-db_get_CoP(message.chat.id)+1
+        if db_get_CoP(message.chat.id) > 0:
             bot.send_message(message.chat.id, "Игрок " + str(player_number) + "\n /Show - чтобы увидеть вашу локацию\n"
                                                                               " /Restart - для перезапуска",
                              reply_markup=keyboard_show)
@@ -218,7 +218,7 @@ def start_message(message):
             db_set_curent_list(message.chat.id, 1)
         elif message.text.lower()[1:] == "list_second_dlc":
             db_set_curent_list(message.chat.id, 2)
-            print(db_get_current_list_number(message.chat.id))
+
         elif message.text.lower()[1:] == "list_third_dlc(in progress...)":
             db_set_curent_list(message.chat.id, 1)  # Временно 1
         bot.send_message(message.chat.id, "Список был изменен" + u'\u2757'+"/Change_list - изменить список\n"
@@ -448,7 +448,11 @@ if "HEROKU" in list(os.environ.keys()):
     server.run(host="0.0.0.0", port=os.environ.get('PORT', 60))
 else:
     bot.remove_webhook()
-    bot.polling(none_stop=True)
+    while True:
+        try:
+            bot.polling(none_stop=True)
+        except Error:
+            pass
 
 server = flask.Flask(__name__)
 
@@ -471,5 +475,4 @@ if __name__ == "__main__":
     server.run(host="0.0.0.0", port=int(os.environ.get('PORT', 5000)))
 
 
-
-
+#Исправить баг с нумерацией

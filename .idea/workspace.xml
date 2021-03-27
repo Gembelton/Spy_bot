@@ -2,7 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0410a831-b887-4181-939f-60e1ca6d1107" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Procfile" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bot.py" beforeDir="false" afterPath="$PROJECT_DIR$/bot.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/User_options.db" beforeDir="false" afterPath="$PROJECT_DIR$/database/User_options.db" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/db_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/entities/game_lists/list_second_dlc.py" beforeDir="false" afterPath="$PROJECT_DIR$/entities/game_lists/list_second_dlc.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/casino.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/casino.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/chirch.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/chirch.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/circus.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/circus.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/hotel.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/hotel.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/military_union.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/military_union.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/partisane_team.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/partisane_team.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/police.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/police.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/ship.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/ship.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/supermarket.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/supermarket.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/first_default/teather.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/images/first_default/teather.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,10 +35,40 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/bot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-324">
-              <caret line="432" selection-start-line="432" selection-end-line="432" />
+            <state relative-caret-position="505">
+              <caret line="454" column="16" selection-start-line="454" selection-start-column="16" selection-end-line="454" selection-end-column="16" />
               <folding>
                 <element signature="e#0#34#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entities/game_lists/list_second_dlc.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="128">
+              <caret line="8" column="74" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="74" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/entities/game_lists/list_first_default.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="112">
+              <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db_functions.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="814">
+              <caret line="304" column="22" selection-start-line="304" selection-start-column="22" selection-end-line="304" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#22#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -38,14 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>количеств</find>
-      <find>show_res</find>
-      <find>перезап</find>
-      <find>db_set_curent_list</find>
-      <find>self.</find>
-      <find>List_first_default</find>
-      <find>db_get_current_list</find>
-      <find>готовый</find>
       <find>теку</find>
       <find>change</find>
       <find>current_list</find>
@@ -56,7 +95,6 @@
       <find>keyboard_edit_list</find>
       <find>выберите</find>
       <find>show_</find>
-      <find>set</find>
       <find>remove_all</find>
       <find>db_delete_from_jurnal_all</find>
       <find>db_get_location</find>
@@ -68,11 +106,22 @@
       <find>Exit</find>
       <find>db_clear_user_info</find>
       <find>bot.polling</find>
+      <find>игрок</find>
+      <find>db_get_CoP</find>
+      <find>set</find>
+      <find>dlc</find>
+      <find>COP</find>
+      <find>play</find>
+      <find>clear</find>
+      <find>final</find>
+      <find>zoo</find>
     </findStrings>
     <replaceStrings>
       <replace />
       <replace>show_list_of_location_UI</replace>
       <replace>sleep(1)</replace>
+      <replace>game_lists</replace>
+      <replace>images</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -90,21 +139,21 @@
         <option value="$PROJECT_DIR$/entities/game_lists/list_main.py" />
         <option value="$PROJECT_DIR$/bot_v2.py" />
         <option value="$PROJECT_DIR$/entities/game_lists/list_dlc_1.py" />
-        <option value="$PROJECT_DIR$/entities/game_lists/list_second_dlc.py" />
         <option value="$PROJECT_DIR$/entities/game_lists/list_first_default.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/config.py" />
-        <option value="$PROJECT_DIR$/db_functions.py" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/app.py" />
+        <option value="$PROJECT_DIR$/db_functions.py" />
+        <option value="$PROJECT_DIR$/entities/game_lists/list_second_dlc.py" />
         <option value="$PROJECT_DIR$/bot.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-43" />
-    <option name="y" value="255" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="303" />
+    <option name="y" value="138" />
     <option name="width" value="1374" />
     <option name="height" value="732" />
   </component>
@@ -132,13 +181,7 @@
             <path>
               <item name="Spy_bot" type="b2602c69:ProjectViewProjectNode" />
               <item name="Spy_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Spy_bot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Spy_bot" type="462c0819:PsiDirectoryNode" />
-              <item name="entities" type="462c0819:PsiDirectoryNode" />
-              <item name="game_lists" type="462c0819:PsiDirectoryNode" />
+              <item name="images" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -297,22 +340,22 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1374" height="732" extended-state="6" />
+    <frame x="303" y="138" width="1374" height="732" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.18353474" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940476" weight="0.5513428" />
       <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.16163142" />
       <window_info id="Favorites" order="2" sideWeight="0.50595236" side_tool="true" weight="0.16993958" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.59516615" weight="0.26143792" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.5939968" weight="0.26490065" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.32843137" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.40483382" side_tool="true" weight="0.1764706" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32843137" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.40600315" side_tool="true" weight="0.26490065" />
       <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49924472" weight="0.32843137" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -320,6 +363,27 @@
       <window_info anchor="right" id="R Graphics" order="3" />
       <window_info anchor="right" id="R Packages" order="4" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4940476" visible="true" weight="0.5513428" />
+      <window_info id="Structure" order="1" sideWeight="0.5010846" side_tool="true" weight="0.16163142" />
+      <window_info id="Favorites" order="2" sideWeight="0.50595236" side_tool="true" weight="0.16993958" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32843137" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.5939968" visible="true" weight="0.26490065" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.32843137" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.40600315" side_tool="true" visible="true" weight="0.26490065" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49924472" weight="0.32843137" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="R Graphics" order="3" />
+      <window_info anchor="right" id="R Packages" order="4" />
+    </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://D:/Своё/my_programms/Bot_spy/bot_v2.py">
@@ -369,13 +433,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_second_dlc.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bot_v2.py" />
     <entry file="file://G:/For_leha/bot.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -388,20 +445,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py" />
-    <entry file="file://$PROJECT_DIR$/db_functions.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3798">
-          <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_first_default.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="38" selection-start-line="14" selection-start-column="38" selection-end-line="14" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app.py" />
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
@@ -417,10 +460,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_first_default.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="112">
+          <caret line="7" column="57" selection-start-line="7" selection-start-column="57" selection-end-line="7" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="814">
+          <caret line="304" column="22" selection-start-line="304" selection-start-column="22" selection-end-line="304" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#22#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/entities/game_lists/list_second_dlc.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="74" selection-start-line="8" selection-start-column="71" selection-end-line="8" selection-end-column="74" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/bot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-324">
-          <caret line="432" selection-start-line="432" selection-end-line="432" />
+        <state relative-caret-position="505">
+          <caret line="454" column="16" selection-start-line="454" selection-start-column="16" selection-end-line="454" selection-end-column="16" />
           <folding>
             <element signature="e#0#34#0" expanded="true" />
           </folding>
