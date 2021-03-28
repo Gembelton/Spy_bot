@@ -33,7 +33,7 @@ def db_select_all_users(conn):
 
 
 def db_check_user_exist(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute(" SELECT count(id) FROM User WHERE id='{0}'".format(user_id))
@@ -44,7 +44,7 @@ def db_check_user_exist(user_id):
 
 
 def db_check_jurnal_exist(user_id, location_number):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute(" SELECT count(id) FROM Jurnal_of_disable"
@@ -57,7 +57,7 @@ def db_check_jurnal_exist(user_id, location_number):
 
 
 def db_delete_from_jurnal_one(user_id, location_number):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -70,7 +70,7 @@ def db_delete_from_jurnal_one(user_id, location_number):
 
 
 def db_delete_from_jurnal_all(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -82,7 +82,7 @@ def db_delete_from_jurnal_all(user_id):
 
 
 def db_set_all_jurnal(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -97,7 +97,7 @@ def db_set_all_jurnal(user_id):
 
 
 def db_get_current_list_number(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute("SELECT curent_list_number FROM User WHERE id='{0}'".format(user_id))
@@ -105,7 +105,7 @@ def db_get_current_list_number(user_id):
 
 
 def db_check_curent_tier(user_id, tier_name):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute(" SELECT curent_tier FROM User WHERE id='{0}'".format(user_id))
@@ -115,7 +115,7 @@ def db_check_curent_tier(user_id, tier_name):
 
 def db_set_curent_CoP(user_id, count_of_players):
     """изменение кол-ва игроков"""
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -126,7 +126,7 @@ def db_set_curent_CoP(user_id, count_of_players):
 
 
 def db_set_curent_list(user_id, number_of_list):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -137,7 +137,7 @@ def db_set_curent_list(user_id, number_of_list):
 
 
 def db_set_delete_message_id(user_id, message_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -148,7 +148,7 @@ def db_set_delete_message_id(user_id, message_id):
 
 
 def db_get_all_disabled_from_jurnal(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute(" SELECT location_number FROM Jurnal_of_disable"
@@ -162,14 +162,14 @@ def db_get_all_disabled_from_jurnal(user_id):
 
 
 def db_get_CoP(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute(" SELECT count_of_players FROM User WHERE id='{0}'".format(user_id))
         return cur.fetchone()[0]
 
 def db_get_CoP_FINAL(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute(" SELECT count_of_players_FINAL FROM User WHERE id='{0}'".format(user_id))
@@ -177,7 +177,7 @@ def db_get_CoP_FINAL(user_id):
 
 
 def db_get_message_id(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute(" SELECT delete_message_id FROM User WHERE id='{0}'".format(user_id))
@@ -185,7 +185,7 @@ def db_get_message_id(user_id):
 
 
 def db_get_spy_number(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute(" SELECT spy_number FROM User WHERE id='{0}'".format(user_id))
@@ -193,7 +193,7 @@ def db_get_spy_number(user_id):
 
 
 def db_get_location(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         cur.execute(" SELECT curent_location_number FROM User WHERE id='{0}'".format(user_id))
@@ -202,7 +202,7 @@ def db_get_location(user_id):
 
 def db_decrease_CoP(user_id):
     count_of_players = db_get_CoP(user_id) - 1
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -215,7 +215,7 @@ def db_decrease_CoP(user_id):
 
 def db_set_spy_number(user_id, count_of_players):
     """рандом шпиона в последовательности"""
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -228,7 +228,7 @@ def db_set_spy_number(user_id, count_of_players):
 
 def db_set_curent_tier(user_id, tier_name):
     """изменение текущего тира юзера"""
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -240,7 +240,7 @@ def db_set_curent_tier(user_id, tier_name):
 
 def db_set_COP_FINAL(user_id, cop_FINAL):
     """изменение текущего тира юзера"""
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -256,7 +256,7 @@ def db_insert_user(user_id):
     :param project:
     :return: project id
     """
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -267,7 +267,7 @@ def db_insert_user(user_id):
 
 
 def db_insert_jurnal_one(user_id, location_number):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -281,7 +281,7 @@ def db_insert_jurnal_one(user_id, location_number):
 
 
 def db_set_location(user_id, list_of_access):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
         try:
@@ -293,7 +293,7 @@ def db_set_location(user_id, list_of_access):
 
 
 def db_clear_user_info(user_id):
-    conn = create_connection(r"database\User_options.db")
+    conn = sqlite3.connect('/home/Gembelton/Spy_bot/database/User_options.db')
     with conn:
         cur = conn.cursor()
 
